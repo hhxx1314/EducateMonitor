@@ -1,0 +1,133 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Bugly (2.4.8)
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - Charts/Realm (3.0.1):
+    - Charts/Core
+    - RealmSwift (~> 1.1)
+  - CryptoSwift (0.6.8)
+  - DZNEmptyDataSet (1.8.1)
+  - EZSwiftExtensions (1.9)
+  - FDStackView (1.0)
+  - HandyJSON (1.7.1)
+  - JCore (1.1.3)
+  - JPush (3.0.5):
+    - JCore (~> 1.1.1)
+  - Kingfisher (3.6.2)
+  - LCNibBridge (1.3.0)
+  - MOBFoundation (2.2.19)
+  - NVActivityIndicatorView (3.6.1)
+  - Onboard (2.3.1)
+  - PeekPop (1.0.0)
+  - PermissionScope (1.1.1)
+  - PromiseKit (4.1.7):
+    - PromiseKit/Foundation (= 4.1.7)
+    - PromiseKit/QuartzCore (= 4.1.7)
+    - PromiseKit/UIKit (= 4.1.7)
+  - PromiseKit/CorePromise (4.1.7)
+  - PromiseKit/Foundation (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.1.7):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.7):
+    - PromiseKit/CorePromise
+  - ReachabilitySwift (3)
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
+  - RealmSwift (1.1.0):
+    - Realm (= 1.1.0)
+  - RxBlocking (3.4.0):
+    - RxSwift (~> 3.4)
+  - RxCocoa (3.4.0):
+    - RxSwift (~> 3.4)
+  - RxDataSources (1.0.3):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxSwift (3.4.0)
+  - RxTest (3.4.0):
+    - RxSwift (~> 3.4)
+  - ShareSDK3 (3.6.3):
+    - MOBFoundation
+    - ShareSDK3/ShareSDK (= 3.6.3)
+  - ShareSDK3/ShareSDK (3.6.3):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/QQ (3.6.3):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKPlatforms/WeChat (3.6.3):
+    - MOBFoundation
+  - ShareSDK3/ShareSDKUI (3.6.3):
+    - MOBFoundation
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Bugly
+  - ChameleonFramework/Swift
+  - Charts
+  - Charts/Realm
+  - CryptoSwift
+  - DZNEmptyDataSet
+  - EZSwiftExtensions
+  - FDStackView
+  - HandyJSON
+  - JPush
+  - Kingfisher
+  - LCNibBridge
+  - MOBFoundation
+  - NVActivityIndicatorView
+  - Onboard
+  - PeekPop
+  - PermissionScope
+  - PromiseKit
+  - ReachabilitySwift
+  - RxBlocking
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - RxTest
+  - ShareSDK3
+  - ShareSDK3/ShareSDKPlatforms/QQ
+  - ShareSDK3/ShareSDKPlatforms/WeChat
+  - ShareSDK3/ShareSDKUI
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  Charts: 0e84f4418e87dad6a9edde221fba37ebb51d3ba7
+  CryptoSwift: f21ea03ed3a94e79d241648ce26652cd4810508a
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
+  FDStackView: 3a4bbe0ce9c35e974246a585168b9da8c32213f1
+  HandyJSON: 54b6ce942795f7b2e61b82fe73cf25d9f139d125
+  JCore: dff3c50e9a7522a508cd9096ca79165968e1aed3
+  JPush: dd0b776998aa705a6242b947bf72e5a640387cfe
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
+  LCNibBridge: cb9041b7f64616a4fad0df953d931ffad13a5721
+  MOBFoundation: e962b2aee79e2b8f626e2d30c2f23e9f13e5331e
+  NVActivityIndicatorView: 9f52a7f84bf5c6a798722c450fe3c198e01c56ed
+  Onboard: b6871f25ac753175b2ab9a362fb2feb26a81a311
+  PeekPop: dcac0f339476b99eb50f8e3bc584f332c744ecf1
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  PromiseKit: 779f2e41faf62d854e7593026ddbcb0bb5c5002d
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
+  RealmSwift: 838058b2db95b12cb86bd0cf209df642c33fb60a
+  RxBlocking: 1797b8c1a3ad7b08965145e6e2294c2e101515aa
+  RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
+  RxDataSources: a021a0e944ba5f7991259829d973afdbfa719c0b
+  RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  RxTest: beb6beb882cf1dcac5fc9fdbd4760a5254e7f3a6
+  ShareSDK3: d271520113160eb24b31cd642b45b38fcd592d93
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 5866afbf345532a72f3f0f8b5c3668c1d7639479
+
+COCOAPODS: 1.2.1
