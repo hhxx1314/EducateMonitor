@@ -1,0 +1,51 @@
+fastlane_version "2.27.0"
+
+default_platform :ios
+
+platform :ios do
+
+before_all do
+  # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+  cocoapods    
+end
+
+lane :build do |options|
+
+   target = options[:target]
+   version = options[:version]
+   config = options[:config]
+   profile = options[:profile]
+   
+   output = options[:output]
+   ipa_name = options[:ipa_name]
+   upload_pgyer = options[:upload_pgyer]
+   upload_appstore = options[:upload_appstore]
+
+    # 如果你用 pod install
+    cocoapods
+
+    increment_build_number_in_plist(target:target)
+    increment_version_number_in_plist(
+      target:target,
+      version_number:version
+    )
+
+    gym(scheme: target,
+        configuration:config,
+        output_directory:output,
+        output_name:ipa_name,
+        export_options:{method:profile}
+      ) # Build your app - more options available
+
+    #蒲公英上传
+    if upload_pgyer == "True"
+       pgyer(api_key: "2f6bef42ad10da9ff1e37bc47b8d0edd", user_key: "0c2c653ee091a1cd24fdf0ff928dc3eb")
+    end
+    
+    # 上传所有信息到App Store
+    if upload_appstore == "True"
+       deliver(force: true)
+    end
+  end
+end
+
