@@ -9,7 +9,7 @@ SECONDS=0
 #pod update
 
 #假设脚本放置在与项目相同的路径下
-project_path="xxx"
+project_path=$(pwd)
 #取当前时间字符串添加到文件结尾
 now=$(date +"%Y%m%d%H_%M%S")
 
@@ -18,13 +18,13 @@ scheme="EducateMonitor"
 #指定要打包的配置名
 configuration="Debug"
 #指定项目地址
-workspace_path="$project_path/xxx.xcworkspace"
+workspace_path="$project_path/$scheme.xcworkspace"
 #指定输出路径
-output_path="/Users/xxx/Dev/ipa"
+output_path="/Users/$scheme/Dev/ipa"
 #指定输出归档文件地址
-archive_path="$output_path/xxx_${now}.xcarchive"
+archive_path="$output_path/$scheme${now}.xcarchive"
 #指定输出ipa地址
-ipa_name="xxx-${now}.ipa"
+ipa_name="$scheme-${now}.ipa"
 #ipa路径
 ipa_path="$output_path/$ipa_name"
 #指定打包所使用的输出方式，目前支持app-store, package, ad-hoc, enterprise, development, 和developer-id，即xcodebuild的method参数
